@@ -13,18 +13,18 @@ Byte Modular invites you to explore the forgotten depths of a decaying Robotics 
 
 ![Module-Model](./readme-imgs/module.png)
 
-• Detach Byte’s head to be used to reach spots otherwise inaccessible
-• Unlock the ability to switch perspectives between Byte’s head and body to increase his range of movement while split.
-• Use Byte’s head to trigger switches and buttons.
+- Detach Byte’s head to be used to reach spots otherwise inaccessible
+- Unlock the ability to switch perspectives between Byte’s head and body to increase his range of movement while split.
+- Use Byte’s head to trigger switches and buttons.
 ### Puzzles:
-• Solve increasingly complex puzzles and navigate platforming sections using Byte’s growing range of abilities.
-• Feel a sense of progression through gaining new abilities and then test them.
+- Solve increasingly complex puzzles and navigate platforming sections using Byte’s growing range of abilities.
+- Feel a sense of progression through gaining new abilities and then test them.
 
 
 ## Visual Style:
-• Technology inspired by 70/80/90’s office equipment with a futuristic twist.
-• Gritty world backdrop contrasted by the bright lights of still working machinery and technology
-• Stark lighting effects
+- Technology inspired by 70/80/90’s office equipment with a futuristic twist.
+- Gritty world backdrop contrasted by the bright lights of still working machinery and technology
+- Stark lighting effects
 
 <img src="./readme-imgs/byte-concept-head-removal.png" alt="drawing" width="300"/>
 
@@ -37,13 +37,13 @@ In the lower levels, exists a small community of abandoned robots, each bearing 
 
 ## Level design:
 ### Progression:
-• Building complexity as more abilities are unlocked.
-• Introduce then reinforce each new mechanic
-• Combine all pieces into one final test
+- Building complexity as more abilities are unlocked.
+- Introduce then reinforce each new mechanic
+- Combine all pieces into one final test
 ### Diffculty vs Pacing:
-• Focus on atmosphere and experience over mechanical skill
-• Intuitive puzzles based on recently gained abilities
-• Extra secrets for those willing to look beyond the critical path
+- Focus on atmosphere and experience over mechanical skill
+- Intuitive puzzles based on recently gained abilities
+- Extra secrets for those willing to look beyond the critical path
 
 ![Level-Design](./readme-imgs/level-plan.png)
 
