@@ -1,0 +1,852 @@
+{
+	"folders": [
+		{
+			"name": "ByteDev",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/Users/Shared/Epic Games/UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug",
+			"dfarley1.file-picker"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "ByteDev Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Debug",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Debug",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDev Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Debug",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"DebugGame",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"DebugGame",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDev Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"DebugGame",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Development",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Development",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDev Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Development",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Test",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Test",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDev Mac Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Test",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Shipping",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Shipping",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDev Mac Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev Mac Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"Mac",
+					"Shipping",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Debug",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Debug",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDev IOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Debug",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"DebugGame",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"DebugGame",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDev IOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"DebugGame",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Development",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Development",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDev IOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Development",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Test",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Test",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDev IOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Test",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Shipping",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Shipping",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDev IOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDev IOS Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDev",
+					"IOS",
+					"Shipping",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDevEditor Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDevEditor",
+					"Mac",
+					"Debug",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDevEditor Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDevEditor",
+					"Mac",
+					"Debug",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDevEditor Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDevEditor Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDevEditor",
+					"Mac",
+					"Debug",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDevEditor Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDevEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDevEditor Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDevEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDevEditor Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDevEditor Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDevEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDevEditor Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDevEditor",
+					"Mac",
+					"Development",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDevEditor Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDevEditor",
+					"Mac",
+					"Development",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ByteDevEditor Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "ByteDevEditor Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"ByteDevEditor",
+					"Mac",
+					"Development",
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch ByteDev (Debug)",
+				"request": "launch",
+				"program": "/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
+				"preLaunchTask": "ByteDev Mac Debug Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch ByteDev (DebugGame)",
+				"request": "launch",
+				"program": "/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
+				"preLaunchTask": "ByteDev Mac DebugGame Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch ByteDev (Development)",
+				"request": "launch",
+				"program": "/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
+				"preLaunchTask": "ByteDev Mac Development Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch ByteDev (Test)",
+				"request": "launch",
+				"program": "/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
+				"preLaunchTask": "ByteDev Mac Test Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch ByteDev (Shipping)",
+				"request": "launch",
+				"program": "/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
+				"preLaunchTask": "ByteDev Mac Shipping Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch ByteDevEditor (Debug)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
+				"preLaunchTask": "ByteDevEditor Mac Debug Build",
+				"args": [
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch ByteDevEditor (DebugGame)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
+				"preLaunchTask": "ByteDevEditor Mac DebugGame Build",
+				"args": [
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch ByteDevEditor (Development)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
+				"preLaunchTask": "ByteDevEditor Mac Development Build",
+				"args": [
+					"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Mac Development Build",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/ByteDev.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/Users/Shared/Epic Games/UE_5.3"
+			}
+		]
+	}
+}
