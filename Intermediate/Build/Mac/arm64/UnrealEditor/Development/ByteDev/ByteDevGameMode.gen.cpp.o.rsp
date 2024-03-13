@@ -1,7 +1,6 @@
 -c
 -pipe
 -I"."
--I"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Source/ByteDev/Private"
 -I"../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT"
 -I"../Shaders/Shared"
 -I"Runtime/Engine/Classes"
@@ -260,7 +259,6 @@
 -I"Developer/WidgetRegistration/Public"
 -I"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Intermediate/Build/Mac/UnrealEditor/Inc/ByteDev/UHT"
 -I"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Source"
--I"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Source/ByteDev/Public"
 -I"../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT"
 -I"../Plugins/EnhancedInput/Source/EnhancedInput/Public"
 -isystem"ThirdParty/mimalloc/include"
