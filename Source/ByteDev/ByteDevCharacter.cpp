@@ -128,3 +128,11 @@ void AByteDevCharacter::Look(const FInputActionValue& Value)
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
 }
+
+void AByteDevCharacter::Jump()
+{
+	if (bCanJump) {
+		bPressedJump = true;
+		JumpKeyHoldTime = 0.0f;
+	}
+}

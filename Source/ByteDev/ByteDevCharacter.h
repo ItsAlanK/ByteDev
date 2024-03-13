@@ -44,6 +44,11 @@ class AByteDevCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* LookAction;
 
+	// In YourPlayerCharacter.h
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Gameplay", meta = (AllowPrivateAccess = "true"))
+	bool bCanJump = false;
+
+
 public:
 	AByteDevCharacter();
 	
@@ -55,7 +60,9 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
-			
+
+	/** Called for jump input, overwrites ACharacter::jump */
+    void Jump();
 
 protected:
 	// APawn interface

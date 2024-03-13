@@ -56,6 +56,11 @@ void EmptyLinkFunctionForGeneratedCodeByteDevCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_LookAction_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bCanJump_MetaData[];
+#endif
+		static void NewProp_bCanJump_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bCanJump;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -158,6 +163,24 @@ void EmptyLinkFunctionForGeneratedCodeByteDevCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AByteDevCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_LookAction_MetaData), Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_LookAction_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Gameplay" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// In YourPlayerCharacter.h\n" },
+#endif
+		{ "ModuleRelativePath", "ByteDevCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "In YourPlayerCharacter.h" },
+#endif
+	};
+#endif
+	void Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump_SetBit(void* Obj)
+	{
+		((AByteDevCharacter*)Obj)->bCanJump = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump = { "bCanJump", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AByteDevCharacter), &Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump_MetaData), Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AByteDevCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_CameraBoom,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_FollowCamera,
@@ -165,6 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeByteDevCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_JumpAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_MoveAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_LookAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AByteDevCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AByteDevCharacter>::IsAbstract,
@@ -204,9 +228,9 @@ void EmptyLinkFunctionForGeneratedCodeByteDevCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_itsalank_Documents_MSc_Games_and_XR_software_engineering_Byte_Modular_ByteDev_Source_ByteDev_ByteDevCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AByteDevCharacter, AByteDevCharacter::StaticClass, TEXT("AByteDevCharacter"), &Z_Registration_Info_UClass_AByteDevCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AByteDevCharacter), 3726473415U) },
+		{ Z_Construct_UClass_AByteDevCharacter, AByteDevCharacter::StaticClass, TEXT("AByteDevCharacter"), &Z_Registration_Info_UClass_AByteDevCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AByteDevCharacter), 3879727973U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_itsalank_Documents_MSc_Games_and_XR_software_engineering_Byte_Modular_ByteDev_Source_ByteDev_ByteDevCharacter_h_1977930323(TEXT("/Script/ByteDev"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_itsalank_Documents_MSc_Games_and_XR_software_engineering_Byte_Modular_ByteDev_Source_ByteDev_ByteDevCharacter_h_4085378880(TEXT("/Script/ByteDev"),
 		Z_CompiledInDeferFile_FID_itsalank_Documents_MSc_Games_and_XR_software_engineering_Byte_Modular_ByteDev_Source_ByteDev_ByteDevCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_itsalank_Documents_MSc_Games_and_XR_software_engineering_Byte_Modular_ByteDev_Source_ByteDev_ByteDevCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
