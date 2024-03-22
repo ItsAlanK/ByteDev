@@ -7,6 +7,9 @@
 			"files": [
 				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/ThirdPerson/Maps/AbandonedTestCenter.umap",
 				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/ThirdPerson/Maps/AbandonedTestCenter_BuiltData.uasset",
+				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/CustomBP/BP_ByteHead.uasset",
+				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/CustomModels/byte-head-joined.uasset",
 				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/CustomModels/byte-head-joined.uasset",
 				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/CustomModels/black_plastic_mat.uasset",
 				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/CustomModels/buttons_grn_mat.uasset",
@@ -16,8 +19,6 @@
 				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/CustomModels/IBM_beige_mat.uasset",
 				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/CustomModels/metal_mat.uasset",
 				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/CustomModels/screen_mat.uasset",
-				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/ThirdPerson/Maps/AbandonedTestCenter_BuiltData.uasset",
-				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/CustomBP/BP_ByteHead.uasset",
 				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/5/Q1/5IZD4L3UPM3EEODZK67MH1.uasset",
 				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/2/66/0OP5U85W4H0R7CHG999ZDN.uasset",
 				"/Users/itsalank/Documents/MSc-Games-and-XR/software-engineering/Byte-Modular/ByteDev/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/B/CJ/ZQ5BFL59YGMQUT9ZD7CAHJ.uasset",
