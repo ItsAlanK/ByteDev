@@ -45,7 +45,7 @@ class AByteDevCharacter : public ACharacter
 	UInputAction* LookAction;
 
 	// In YourPlayerCharacter.h
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Gameplay", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay", meta = (AllowPrivateAccess = "true"))
 	bool bCanJump = false;
 
 
@@ -63,12 +63,6 @@ protected:
 
 	/** Called for jump input, overwrites ACharacter::jump */
     void Jump();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
-	FVector ForwardDirection;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
-	FVector RightDirection;
 
 protected:
 	// APawn interface
