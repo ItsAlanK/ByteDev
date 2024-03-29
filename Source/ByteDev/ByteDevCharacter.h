@@ -64,6 +64,12 @@ protected:
 	/** Called for jump input, overwrites ACharacter::jump */
     void Jump();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
+	FVector ForwardDirection;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
+	FVector RightDirection;
+
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

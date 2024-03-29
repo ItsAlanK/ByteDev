@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodeByteDevCharacter() {}
 // Cross Module References
 	BYTEDEV_API UClass* Z_Construct_UClass_AByteDevCharacter();
 	BYTEDEV_API UClass* Z_Construct_UClass_AByteDevCharacter_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
@@ -61,6 +62,14 @@ void EmptyLinkFunctionForGeneratedCodeByteDevCharacter() {}
 #endif
 		static void NewProp_bCanJump_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bCanJump;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ForwardDirection_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ForwardDirection;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_RightDirection_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_RightDirection;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -181,6 +190,20 @@ void EmptyLinkFunctionForGeneratedCodeByteDevCharacter() {}
 		((AByteDevCharacter*)Obj)->bCanJump = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump = { "bCanJump", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AByteDevCharacter), &Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump_MetaData), Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_ForwardDirection_MetaData[] = {
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "ByteDevCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_ForwardDirection = { "ForwardDirection", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AByteDevCharacter, ForwardDirection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_ForwardDirection_MetaData), Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_ForwardDirection_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_RightDirection_MetaData[] = {
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "ByteDevCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_RightDirection = { "RightDirection", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AByteDevCharacter, RightDirection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_RightDirection_MetaData), Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_RightDirection_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AByteDevCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_CameraBoom,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_FollowCamera,
@@ -189,6 +212,8 @@ void EmptyLinkFunctionForGeneratedCodeByteDevCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_MoveAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_LookAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_bCanJump,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_ForwardDirection,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AByteDevCharacter_Statics::NewProp_RightDirection,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AByteDevCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AByteDevCharacter>::IsAbstract,
@@ -228,9 +253,9 @@ void EmptyLinkFunctionForGeneratedCodeByteDevCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_itsalank_Documents_MSc_Games_and_XR_software_engineering_Byte_Modular_ByteDev_Source_ByteDev_ByteDevCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AByteDevCharacter, AByteDevCharacter::StaticClass, TEXT("AByteDevCharacter"), &Z_Registration_Info_UClass_AByteDevCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AByteDevCharacter), 3879727973U) },
+		{ Z_Construct_UClass_AByteDevCharacter, AByteDevCharacter::StaticClass, TEXT("AByteDevCharacter"), &Z_Registration_Info_UClass_AByteDevCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AByteDevCharacter), 3861062704U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_itsalank_Documents_MSc_Games_and_XR_software_engineering_Byte_Modular_ByteDev_Source_ByteDev_ByteDevCharacter_h_4085378880(TEXT("/Script/ByteDev"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_itsalank_Documents_MSc_Games_and_XR_software_engineering_Byte_Modular_ByteDev_Source_ByteDev_ByteDevCharacter_h_2922614887(TEXT("/Script/ByteDev"),
 		Z_CompiledInDeferFile_FID_itsalank_Documents_MSc_Games_and_XR_software_engineering_Byte_Modular_ByteDev_Source_ByteDev_ByteDevCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_itsalank_Documents_MSc_Games_and_XR_software_engineering_Byte_Modular_ByteDev_Source_ByteDev_ByteDevCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
