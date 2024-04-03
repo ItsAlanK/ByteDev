@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-ByteDev.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Documents\MSc-Games\Software-Engineering\ByteDev\Intermediate\Build\Win64\x64\ByteDevEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"E:\Documents\MSc-Games\Software-Engineering\ByteDev\Intermediate\Build\Win64\x64\UnrealEditor\Development\ByteDev\ByteDev.init.gen.cpp.obj"
+"E:\Documents\MSc-Games\Software-Engineering\ByteDev\Intermediate\Build\Win64\x64\UnrealEditor\Development\ByteDev\ByteDevCharacter.gen.cpp.obj"
+"E:\Documents\MSc-Games\Software-Engineering\ByteDev\Intermediate\Build\Win64\x64\UnrealEditor\Development\ByteDev\ByteDevGameMode.gen.cpp.obj"
+"E:\Documents\MSc-Games\Software-Engineering\ByteDev\Intermediate\Build\Win64\x64\UnrealEditor\Development\ByteDev\ByteDev.cpp.obj"
+"E:\Documents\MSc-Games\Software-Engineering\ByteDev\Intermediate\Build\Win64\x64\UnrealEditor\Development\ByteDev\ByteDevCharacter.cpp.obj"
+"E:\Documents\MSc-Games\Software-Engineering\ByteDev\Intermediate\Build\Win64\x64\UnrealEditor\Development\ByteDev\ByteDevGameMode.cpp.obj"
+"E:\Documents\MSc-Games\Software-Engineering\ByteDev\Intermediate\Build\Win64\x64\UnrealEditor\Development\ByteDev\Default.rc2.res"
+/OUT:"E:\Documents\MSc-Games\Software-Engineering\ByteDev\Intermediate\Build\Win64\x64\UnrealEditor\Development\ByteDev\UnrealEditor-ByteDev.lib"

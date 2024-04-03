@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\documents\\msc-games\\software-engineering\\bytedev\\intermediate\\build\\win64\\unrealeditor\\inc\\bytedev\\uht\\bytedev.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\documents\\msc-games\\software-engineering\\bytedev\\intermediate\\build\\win64\\x64\\bytedeveditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "e:\\documents\\msc-games\\software-engineering\\bytedev\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\bytedev\\definitions.bytedev.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
