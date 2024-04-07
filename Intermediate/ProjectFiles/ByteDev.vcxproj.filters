@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ByteDev.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ByteDev.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ByteDevEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.ignore" />
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\ByteDev (Mac).code-workspace" />
+    <None Include="..\..\ByteDev.code-workspace" />
+    <None Include="..\..\main" />
+    <None Include="..\..\README.md" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ByteDev">
+      <UniqueIdentifier>{E9970348-514D-3539-80E0-47A6D939B354}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ByteDev\ByteDev.Build.cs">
+      <Filter>Source\ByteDev</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ByteDev\ByteDev.cpp">
+      <Filter>Source\ByteDev</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ByteDev\ByteDev.h">
+      <Filter>Source\ByteDev</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ByteDev\ByteDevCharacter.cpp">
+      <Filter>Source\ByteDev</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ByteDev\ByteDevCharacter.h">
+      <Filter>Source\ByteDev</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ByteDev\ByteDevGameMode.cpp">
+      <Filter>Source\ByteDev</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ByteDev\ByteDevGameMode.h">
+      <Filter>Source\ByteDev</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
