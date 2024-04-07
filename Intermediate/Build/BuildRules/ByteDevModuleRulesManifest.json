@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"E:\\Documents\\MSc-Games\\Software-Engineering\\ByteDev\\Source\\ByteDev\\ByteDev.Build.cs",
-		"E:\\Documents\\MSc-Games\\Software-Engineering\\ByteDev\\Source\\ByteDev.Target.cs",
-		"E:\\Documents\\MSc-Games\\Software-Engineering\\ByteDev\\Source\\ByteDevEditor.Target.cs"
-	],
-	"EngineVersion": "5.3.2"
-}
