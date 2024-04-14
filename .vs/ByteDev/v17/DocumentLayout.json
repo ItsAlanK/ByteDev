@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Documents\\MSc-Games\\Software-Engineering\\ByteDev\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53662BDB-ED66-3294-9CEB-FAA31392000C}|Intermediate\\ProjectFiles\\ByteDev.vcxproj|E:\\Documents\\MSc-Games\\Software-Engineering\\ByteDev\\Source\\ByteDev\\ByteDevGameMode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{53662BDB-ED66-3294-9CEB-FAA31392000C}|Intermediate\\ProjectFiles\\ByteDev.vcxproj|solutionrelative:Source\\ByteDev\\ByteDevGameMode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53662BDB-ED66-3294-9CEB-FAA31392000C}|Intermediate\\ProjectFiles\\ByteDev.vcxproj|E:\\Documents\\MSc-Games\\Software-Engineering\\ByteDev\\Source\\ByteDev\\ByteDevGameMode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{53662BDB-ED66-3294-9CEB-FAA31392000C}|Intermediate\\ProjectFiles\\ByteDev.vcxproj|solutionrelative:Source\\ByteDev\\ByteDevGameMode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ByteDevGameMode.cpp",
+              "DocumentMoniker": "E:\\Documents\\MSc-Games\\Software-Engineering\\ByteDev\\Source\\ByteDev\\ByteDevGameMode.cpp",
+              "RelativeDocumentMoniker": "Source\\ByteDev\\ByteDevGameMode.cpp",
+              "ToolTip": "E:\\Documents\\MSc-Games\\Software-Engineering\\ByteDev\\Source\\ByteDev\\ByteDevGameMode.cpp",
+              "RelativeToolTip": "Source\\ByteDev\\ByteDevGameMode.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-14T16:08:18.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ByteDevGameMode.h",
+              "DocumentMoniker": "E:\\Documents\\MSc-Games\\Software-Engineering\\ByteDev\\Source\\ByteDev\\ByteDevGameMode.h",
+              "RelativeDocumentMoniker": "Source\\ByteDev\\ByteDevGameMode.h",
+              "ToolTip": "E:\\Documents\\MSc-Games\\Software-Engineering\\ByteDev\\Source\\ByteDev\\ByteDevGameMode.h",
+              "RelativeToolTip": "Source\\ByteDev\\ByteDevGameMode.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-14T16:08:18.116Z",
+              "EditorCaption": ""
             }
           ]
         }
