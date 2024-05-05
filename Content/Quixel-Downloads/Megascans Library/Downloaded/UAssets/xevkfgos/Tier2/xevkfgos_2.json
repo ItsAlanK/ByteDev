@@ -1,0 +1,87 @@
+{
+	"assetId": "xevkfgos",
+	"assetName": "Dirty_Concrete_Wall_xevkfgos",
+	"assetType": "surface",
+	"assetSubType": "",
+	"assetTier": 2,
+	"assetRootPath": "/Game/Megascans/Surfaces/Dirty_Concrete_Wall_xevkfgos",
+	"meshList": [],
+	"foliageAssetPaths": [],
+	"materialInstances": [
+		{
+			"instanceId": "mat1",
+			"instanceName": "MI_Dirty_Concrete_Wall_xevkfgos_2K",
+			"instancePath": "/Game/Megascans/Surfaces/Dirty_Concrete_Wall_xevkfgos/MI_Dirty_Concrete_Wall_xevkfgos_2K.MI_Dirty_Concrete_Wall_xevkfgos_2K",
+			"instanceMaster": "master1",
+			"type": "materialInstance",
+			"params": [
+				{
+					"paramName": "albedo",
+					"usedTextureId": "tex2"
+				},
+				{
+					"paramName": "normal",
+					"usedTextureId": "tex3"
+				},
+				{
+					"paramName": "ARD",
+					"usedTextureId": "tex1"
+				}
+			]
+		}
+	],
+	"textureSets": [
+		{
+			"textureId": "tex1",
+			"type": "ARD",
+			"resolution": "2K",
+			"name": "T_DirtyConcreteWall_xevkfgos_2K_ORDp",
+			"path": "/Game/Megascans/Surfaces/Dirty_Concrete_Wall_xevkfgos/T_DirtyConcreteWall_xevkfgos_2K_ORDp.T_DirtyConcreteWall_xevkfgos_2K_ORDp",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "PackTexture"
+				}
+			]
+		},
+		{
+			"textureId": "tex2",
+			"type": "albedo",
+			"resolution": "2K",
+			"name": "T_Dirty_Concrete_Wall_xevkfgos_2K_D",
+			"path": "/Game/Megascans/Surfaces/Dirty_Concrete_Wall_xevkfgos/T_Dirty_Concrete_Wall_xevkfgos_2K_D.T_Dirty_Concrete_Wall_xevkfgos_2K_D",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "albedo"
+				}
+			]
+		},
+		{
+			"textureId": "tex3",
+			"type": "normal",
+			"resolution": "2K",
+			"name": "T_Dirty_Concrete_Wall_xevkfgos_2K_N",
+			"path": "/Game/Megascans/Surfaces/Dirty_Concrete_Wall_xevkfgos/T_Dirty_Concrete_Wall_xevkfgos_2K_N.T_Dirty_Concrete_Wall_xevkfgos_2K_N",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "normal"
+				}
+			]
+		}
+	],
+	"masterMaterials": [
+		{
+			"masterId": "master1",
+			"masterMaterialName": "M_MS_Surface_Material",
+			"path": "/Game/MSPresets/M_MS_Surface_Material/M_MS_Surface_Material"
+		}
+	]
+}

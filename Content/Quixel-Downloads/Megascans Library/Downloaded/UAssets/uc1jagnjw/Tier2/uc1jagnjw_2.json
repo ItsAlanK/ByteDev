@@ -1,0 +1,100 @@
+{
+	"assetId": "uc1jagnjw",
+	"assetName": "Concrete_Rubble_uc1jagnjw",
+	"assetType": "3d",
+	"assetSubType": "singleMesh",
+	"assetTier": 2,
+	"assetRootPath": "/Game/Megascans/3D_Assets/Concrete_Rubble_uc1jagnjw",
+	"meshList": [
+		{
+			"meshId": "mesh1",
+			"name": "S_Concrete_Rubble_uc1jagnjw_lod3",
+			"path": "/Game/Megascans/3D_Assets/Concrete_Rubble_uc1jagnjw/S_Concrete_Rubble_uc1jagnjw_lod3.S_Concrete_Rubble_uc1jagnjw_lod3",
+			"numberOfLods": 4,
+			"materialUsage": [
+				{
+					"instanceId": "mat1",
+					"materialSlot": "0"
+				}
+			]
+		}
+	],
+	"foliageAssetPaths": [],
+	"materialInstances": [
+		{
+			"instanceId": "mat1",
+			"instanceName": "MI_Concrete_Rubble_uc1jagnjw_2K",
+			"instancePath": "/Game/Megascans/3D_Assets/Concrete_Rubble_uc1jagnjw/MI_Concrete_Rubble_uc1jagnjw_2K.MI_Concrete_Rubble_uc1jagnjw_2K",
+			"instanceMaster": "master1",
+			"type": "materialInstance",
+			"params": [
+				{
+					"paramName": "albedo",
+					"usedTextureId": "tex2"
+				},
+				{
+					"paramName": "normal",
+					"usedTextureId": "tex3"
+				},
+				{
+					"paramName": "DR",
+					"usedTextureId": "tex1"
+				}
+			]
+		}
+	],
+	"textureSets": [
+		{
+			"textureId": "tex1",
+			"type": "DR",
+			"resolution": "2K",
+			"name": "T_ConcreteRubble_uc1jagnjw_2K_DpR",
+			"path": "/Game/Megascans/3D_Assets/Concrete_Rubble_uc1jagnjw/T_ConcreteRubble_uc1jagnjw_2K_DpR.T_ConcreteRubble_uc1jagnjw_2K_DpR",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "PackTexture"
+				}
+			]
+		},
+		{
+			"textureId": "tex2",
+			"type": "albedo",
+			"resolution": "2K",
+			"name": "T_Concrete_Rubble_uc1jagnjw_2K_D",
+			"path": "/Game/Megascans/3D_Assets/Concrete_Rubble_uc1jagnjw/T_Concrete_Rubble_uc1jagnjw_2K_D.T_Concrete_Rubble_uc1jagnjw_2K_D",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "albedo"
+				}
+			]
+		},
+		{
+			"textureId": "tex3",
+			"type": "normal",
+			"resolution": "2K",
+			"name": "T_Concrete_Rubble_uc1jagnjw_2K_N",
+			"path": "/Game/Megascans/3D_Assets/Concrete_Rubble_uc1jagnjw/T_Concrete_Rubble_uc1jagnjw_2K_N.T_Concrete_Rubble_uc1jagnjw_2K_N",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "normal"
+				}
+			]
+		}
+	],
+	"masterMaterials": [
+		{
+			"masterId": "master1",
+			"masterMaterialName": "M_MS_Default_Material",
+			"path": "/Game/MSPresets/M_MS_Default_Material/M_MS_Default_Material"
+		}
+	]
+}

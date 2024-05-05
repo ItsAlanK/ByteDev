@@ -1,0 +1,68 @@
+{
+	"assetId": "sl2qedtp",
+	"assetName": "Industrial_Concrete_Floor_sl2qedtp",
+	"assetType": "surface",
+	"assetSubType": "",
+	"assetTier": 4,
+	"assetRootPath": "/Game/Megascans/Surfaces/Industrial_Concrete_Floor_sl2qedtp/Preview",
+	"meshList": [],
+	"foliageAssetPaths": [],
+	"materialInstances": [
+		{
+			"instanceId": "mat1",
+			"instanceName": "MI_Industrial_Concrete_Floor_sl2qedtp_1K",
+			"instancePath": "/Game/Megascans/Surfaces/Industrial_Concrete_Floor_sl2qedtp/Preview/MI_Industrial_Concrete_Floor_sl2qedtp_1K.MI_Industrial_Concrete_Floor_sl2qedtp_1K",
+			"instanceMaster": "master1",
+			"type": "materialInstance",
+			"params": [
+				{
+					"paramName": "albedo",
+					"usedTextureId": "tex1"
+				},
+				{
+					"paramName": "normal",
+					"usedTextureId": "tex2"
+				}
+			]
+		}
+	],
+	"textureSets": [
+		{
+			"textureId": "tex1",
+			"type": "albedo",
+			"resolution": "1K",
+			"name": "T_Industrial_Concrete_Floor_sl2qedtp_1K_D",
+			"path": "/Game/Megascans/Surfaces/Industrial_Concrete_Floor_sl2qedtp/Preview/T_Industrial_Concrete_Floor_sl2qedtp_1K_D.T_Industrial_Concrete_Floor_sl2qedtp_1K_D",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "albedo"
+				}
+			]
+		},
+		{
+			"textureId": "tex2",
+			"type": "normal",
+			"resolution": "1K",
+			"name": "T_Industrial_Concrete_Floor_sl2qedtp_1K_N",
+			"path": "/Game/Megascans/Surfaces/Industrial_Concrete_Floor_sl2qedtp/Preview/T_Industrial_Concrete_Floor_sl2qedtp_1K_N.T_Industrial_Concrete_Floor_sl2qedtp_1K_N",
+			"isChannelPacked": false,
+			"channelPackInfo": [],
+			"pluggedIn": [
+				{
+					"matId": "mat1",
+					"matParams": "normal"
+				}
+			]
+		}
+	],
+	"masterMaterials": [
+		{
+			"masterId": "master1",
+			"masterMaterialName": "M_MS_Surface_Material",
+			"path": "/Game/MSPresets/M_MS_Surface_Material/M_MS_Surface_Material"
+		}
+	]
+}
